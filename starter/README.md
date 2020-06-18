@@ -1,5 +1,4 @@
-# cand-p3-security
-Udacity Cloud Architect Nanodegree - Project 3 - Design for Security
+# Cloud Security - Secure the Recipe Vault Web Application
  
 In this project, you will:
  
