@@ -1,0 +1,4 @@
+Host canda-web
+HostName ec2-3-208-222-21.compute-1.amazonaws.com
+User ubuntu
+IdentityFile "~/.ssh/cloud-k2-kv.pem"

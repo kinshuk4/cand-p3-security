@@ -1,0 +1,9 @@
+## Suggestions
+- We should first fix the inspector finding with the high severity.
+- First of all we should block the public access on web service instance on port 20,21 and 23.
+- Rigourous IAM policies should be enforced, as currently the CIS 1.1 (avoid use of root iam account) rule has failed.
+- Other medium CIS policies regarding IAM should be enforced - for eg. setting MFA access, expire the passwords in 90 days, etc.
+- Cloudtrail should be enabled for all the regions
+- Enable S3 bucket logging
+- Security groups (SGs) should be revisited and follow the principle of least privelege. For eg. SGs shouldn't allow ingress on port 22 or port 3389, etc.
+- Web service instances shouldn't expose inbound rules for port 80 and 5000 from the internet.

@@ -1,0 +1,21 @@
+# Identify tools that will allow you to do the following:
+
+## Scan infrastructure as code templates
+- Regula for Terraform and CFripper for Cloudformation.
+
+### Example vulnerability
+Here is example from Regula:
+security_group_ingress_anywhere_rdp - VPC security group rules should not permit ingress from '0.0.0.0/0' to port 3389 (Remote Desktop Protocol)
+
+##Scan AMI’s or containers for OS vulnerabilities
+- In case of containers - Image Scanning in AWS ECR is natively supported.
+- Qualys Scanner for AWS AMIs
+
+### Example vulnerability
+Example - EC2 Amazon Machine Image (AMI) in JBoss Enterprise Application Platform (EAP) 5.1.2 uses 755 permissions for /var/cache/jboss-ec2-eap/, which allows local users to read sensitive information such as Amazon Web Services (AWS) credentials by reading files in the directory. (https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-3427)
+
+##Scan an AWS environment for cloud configuration vulnerabilities
+AWS Config, AWS SecurityHub
+
+### Example vulnerability
+securityhub-s3-bucket-server-side-encryption-enabled - Checks if serverside encryption is enabled for the s3 bucket or not.
